@@ -1,13 +1,13 @@
-import logo from './logo.svg';
-import CartLists from './components/CartLists';
+import Header from './components/Header.Js';
+import Carts from './components/carts';
 import './App.css';
 
 function App() {
   return (
     <div>
-     
-     <CartLists></CartLists>
-    </div>
+      <Header></Header>
+    <Carts></Carts>
+   </div>
   );
 }
 

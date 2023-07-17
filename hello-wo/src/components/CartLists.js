@@ -1,17 +1,22 @@
-const CartLists =()=>{
+const CartLists =({data})=>{
+
+     console.log(data)
+
+
 return(
-   <div className={"cardContainer"}>
-    <img className={"image"} src="/imagelogos/product.png" alt="product name" width="200px" height="200px"/>
+   <div className={"card-container"}>
+    <img className={"image"} src={"/imagelogos/"+data.thumbnail} alt="product name" width="200px" height="200px"/>
+    {/* //can use literal also `/imaelogos/${data.thmbnail} */}
   
    <div className={"prices"}>
-    <span className={"newPrice"}>Rs.627</span>
-        <small className={"oldPrice"}>
-        <strike >Rs.200</strike>
+    <span className={"new-price"}>Rs.{data.discountedPrice}</span>
+        <small className={"old-price"}>
+        <strike>Rs.{data.price}</strike>
         </small>
     </div>
-    <div className="lowerCart">
-    <h1 className="productName">Product Name</h1>
-    <button className="addToCartBtn"><span>Add To Cart</span><img src="/imagelogos/R.png" alt="logo" width="10px" height="10px"/></button>
+    <div className="lower-cart">
+    <h1 className="product-name">{data.title}</h1>
+    <button className="add-to-cart-btn"><span>Add To Cart</span><img src="/imagelogos/R.png" alt="logo" width="15px" height="15px"/></button>
     </div></div>
  
 
