@@ -1,6 +1,4 @@
 .navbar{
-
-
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -10,28 +8,31 @@ color:black;
 padding-left: 2rem;
 padding-right: 2rem;
 
-
-
 .heading{
     display: flex;
     gap: 2px;
     flex-direction: row;
     align-items: center;
 }
+.searcher{
+display: flex;
+flex-direction: row;
+align-items: center;
+}
 .header-input{
-    width:25%;
+   width:85%;
     height: 1.4rem;
-    border: none;
-    box-shadow: 4px 7px 3px black;
-
+    border: none;   
+}
+.search-logo{
+    width:15%;
 }
 
 .nav-items{
     display: flex;
     gap: 3rem;
     flex-direction: row;
-    align-items: center;
-    
+    align-items: center;  
 }
 .nav-logo{
     text-decoration: none;
